@@ -103,7 +103,9 @@ header nav a{
   .dropdown-content a:hover {background-color: #f1f1f1}
   
   .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    
   }
   
   .dropdown:hover .dropbtn {
@@ -145,19 +147,18 @@ section iframe{width: 100%;}
 
 /* DE 3 CARDS */
 
-.imageplace{
-    width: 100%;
-    height: 400px;
-    background-color: white;
-    size-adjust: small;
-}
-
 .cardscontainer{
     display: flex;
     justify-content: space-around;
     min-width: 950px;
-    /*min width er når man gør skærmen mindre, 
+   /*min width er når man gør skærmen mindre, 
     så alt ikke smelter sammen*/
+  
+
+    background-color: white;
+    width: 100%;
+    height: 600px;
+  
 }
 
 .cardscontainer div{
@@ -185,6 +186,10 @@ section iframe{width: 100%;}
 
 
 
+
+/* Hvis man har sat højden på en sektion til en vis hæjde, og der derfor kommer overflow.
+  altså tekst / indhold der stikke ud over sektionen. Kan man skrive: overflow:auto;
+  for at oprette en scrool bar. */
 
 
 
